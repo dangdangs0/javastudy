@@ -7,12 +7,13 @@ public class ExceptionApp {
 
 		try {
 			System.out.println(2);
-			System.out.println(scores[3]);
+//			System.out.println(scores[3]);
 			System.out.println(3);
-//			System.out.println(2/0); 
+			System.out.println(2/0); 
 			System.out.println(4);
 		}catch(ArithmeticException e) {
-			System.out.println("wrong Calculation");
+			System.out.println("wrong Calculation"+e.getMessage());
+			e.printStackTrace();
 		}
 		catch(Exception e) {
 			System.out.println("Something Wrong.");
