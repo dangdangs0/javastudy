@@ -1,18 +1,19 @@
 
 public class WhyMethod {
-	public static void printTwoTimesA() {
-		System.out.println("-");
-		System.out.println("A");
-		System.out.println("A");
-	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		printTwoTimesA();
+		printTwoTimes("a","-");
 		
-		printTwoTimesA();
+		printTwoTimes("a","*");
 		
-		printTwoTimesA();
+		printTwoTimes("a","&");
+		printTwoTimes("b","!");
+	}
+	public static void printTwoTimes(String text,String delimiter) {
+		System.out.println(delimiter);
+		System.out.println(text);
+		System.out.println(text);
 	}
 
 }
