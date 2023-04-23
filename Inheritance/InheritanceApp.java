@@ -3,14 +3,14 @@ class Cal{
 		return v1+v2;
 	}
 	public int sum(int v1, int v2, int v3) {//overloading
-		return v1+v2+v3;
+		return this.sum(v1,v2)+v3;//sum(v1,v2)+v3 is ok.
 	}
 }
 
 class Cal3 extends Cal{
 	public int sum(int v1, int v2) { //overriding
 		System.out.println("Cal3!!");
-		return v1+v2;
+		return super.sum(v1,v2);
 	}
 	
 	public int minus(int v1, int v2) {
