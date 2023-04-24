@@ -20,12 +20,18 @@ class RealCal implements Calculable, Printable{
 	
 }
 
+class AdvancedPrint implements Printable{
+	@Override
+	public void print() {
+		System.out.println("This is RealCal!!!");
+	}
+	
+}
+
 public class InterfaceApp {
 	public static void main(String[] args) {
-		RealCal cal=new RealCal();
-		System.out.println(cal.sum(2, 1));
+		Printable cal=new AdvancedPrint();
 		cal.print();
-		System.out.println(cal.PI);
 	}
 
 }
